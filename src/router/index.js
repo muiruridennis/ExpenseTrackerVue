@@ -5,6 +5,8 @@ import Profile from '../views/Profile.vue';
 import LoginPage from '../views/LoginPage.vue';
 import SignupPage from '../views/SignupPage.vue';
 import NotFound from '../views/NotFound.vue';
+import ExchangeRateDashboard from '@/views/ExchangeRateDashboard.vue';
+
 
 const routes = [
   {
@@ -35,6 +37,11 @@ const routes = [
     name: 'NotFound',
     component: NotFound, // Optional: Add a "404 - Page Not Found" view
   },
+  { path: '/exchange-rates', 
+  name: 'exchange-rates', 
+  component: ExchangeRateDashboard 
+},
+
 ];
 
 const router = createRouter({
